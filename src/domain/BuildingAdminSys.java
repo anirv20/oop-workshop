@@ -1,12 +1,13 @@
-package sample;
+package domain;
 
 import java.util.*;
 
 public class BuildingAdminSys implements IBuildingManagementSystem {
     private List<Building> buildings = new ArrayList<>();
 
-    public void addBuilding(Building building) {
+    public UUID addBuilding(Building building) {
         this.buildings.add(building);
+        return building.getID();
     }
 
     public void removeBuilding(UUID id) {

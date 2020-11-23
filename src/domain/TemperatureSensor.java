@@ -1,17 +1,17 @@
-package sample;
+package domain;
 
-public class VentilatorActuator extends Actuator {
+public class TemperatureSensor extends Sensor{
 
-    public VentilatorActuator(double value){
+    public TemperatureSensor(double value) {
         super(value);
     }
-    public VentilatorActuator(String description){
+    public TemperatureSensor(String description) {
         super(description);
     }
 
     @Override
     public String toString() {
-        return "Ventilator Actuator{" +
+        return "Temperature Sensor{" +
                 "value=" + getValue() +
                 ", id=" + getId() +
                 '}';

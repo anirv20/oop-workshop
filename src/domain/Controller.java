@@ -1,4 +1,4 @@
-package sample;
+package domain;
 
 public class Controller {
 }

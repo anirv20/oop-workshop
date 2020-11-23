@@ -1,4 +1,4 @@
-package sample;
+package domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,11 @@ public class Building {
     public Building() {
         this.id = UUID.randomUUID();
         this.description = "This is a building.";
+    }
+
+    public Building(String description) {
+        this.id = UUID.randomUUID();
+        this.description = description;
     }
 
     public Building(List<Sensor> sensors, List<Actuator> actuators, String description) {
