@@ -5,6 +5,9 @@ public class TemperatureSensor extends Sensor{
     public TemperatureSensor(double value) {
         super(value);
     }
+    public TemperatureSensor(String description) {
+        super(description);
+    }
 
     @Override
     public String toString() {
